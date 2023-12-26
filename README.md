@@ -1,4 +1,3 @@
-  Certificate Generator App
 
 
 Certificate Generator App
