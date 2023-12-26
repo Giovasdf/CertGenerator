@@ -5,11 +5,11 @@ Certificate Generator App
 
 The Certificate Generator App is an open-source platform that empowers users to effortlessly generate certificates for various achievements, such as course completion, training sessions, or any other notable accomplishment. Users have the flexibility to customize certificate templates, add dynamic content, and produce visually appealing certificates suitable for different purposes.
 
-<img src="https://github.com/Giovasdf/CertGenerator/blob/main/PicturesForGit/1.png?raw=true" alt="alt text" width="300">
+<img src="https://github.com/Giovasdf/CertGenerator/blob/main/PicturesForGit/1.png?raw=true" alt="alt text" width="700">
 
-<img src="https://github.com/Giovasdf/CertGenerator/blob/main/PicturesForGit/2.png?raw=true" alt="alt text" width="200">
+<img src="https://github.com/Giovasdf/CertGenerator/blob/main/PicturesForGit/2.png?raw=true" alt="alt text" width="400">
 
-<img src="https://github.com/Giovasdf/CertGenerator/blob/main/PicturesForGit/3.png?raw=true" alt="alt text" width="300">
+<img src="https://github.com/Giovasdf/CertGenerator/blob/main/PicturesForGit/3.png?raw=true" alt="alt text" width="700">
 
 
 Technologies Used
