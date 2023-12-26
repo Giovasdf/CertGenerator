@@ -30,7 +30,7 @@ Make sure you have the following installed:
 
 3.  Navigate to the project folder:
 
-    cd your-repo
+    cd CertGenerator
 
 5.  Install dependencies:
 
@@ -46,10 +46,6 @@ Visit [http://localhost:4200/](http://localhost:4200/) in your browser.
 
 PocketBase Initialization
 -------------------------
-
-### Prerequisites
-
-Make sure you have a PocketBase account.
 
 ### Initialization
 
