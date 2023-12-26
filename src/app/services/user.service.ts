@@ -18,11 +18,34 @@ export class UserService {
   async getUsers(){
     try {
       const authData = await this.pb.collection('users').getFullList();
-
+      console.log(authData)
       return authData;
     } catch (error) {
       // Handle error, show a message, etc.
       return error;
     }
+  }
+
+  async createUser(data:any){
+   const record = await this.pb.collection('users').create(data);
+   this.router.navigate(['/dashboard/1']);
+  }
+
+  async deleteUser(id:any){
+    console.log(id)
+    await this.pb.collection('users').delete('id');
+  }
+
+  async updateUser(data:any){
+  //   const data = {
+  //     "username": "test_username_update",
+  //     "emailVisibility": false,
+  //     "password": "87654321",
+  //     "passwordConfirm": "87654321",
+  //     "oldPassword": "12345678",
+  //     "name": "test"
+  // };
+
+  const record = await this.pb.collection('users').update(data.id, data);
   }
 }

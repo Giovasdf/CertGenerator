@@ -11,6 +11,8 @@ import { BodyComponent } from './dashboard/body/body.component';
 import { UsersComponent } from './dashboard/users/users.component';
 import { CourseComponent } from './dashboard/course/course.component';
 import { OopsComponent } from './oops/oops.component';
+import { CertificationComponent } from './dashboard/certification/certification.component';
+import { VerifyComponent } from './verify/verify.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { OopsComponent } from './oops/oops.component';
     BodyComponent,
     UsersComponent,
     CourseComponent,
-    OopsComponent
+    OopsComponent,
+    CertificationComponent,
+    VerifyComponent
 
   ],
   imports: [

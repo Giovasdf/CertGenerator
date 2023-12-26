@@ -25,7 +25,7 @@ export class UsersComponent implements OnInit  {
   }
 
   deleteUser(userId:any){
-
+    this.userServive.deleteUser(userId);
   }
 
   addUser(){

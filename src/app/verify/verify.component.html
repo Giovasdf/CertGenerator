@@ -1,0 +1,27 @@
+<div class="container mt-4">
+  <h2>Check Certificate</h2>
+
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">Certificate Information</h3>
+
+      <dl class="row">
+        <dt class="col-sm-3">Course Name:</dt>
+        <dd class="col-sm-9">{{ certificate?.expand?.course?.name }}</dd>
+
+        <dt class="col-sm-3">User Name:</dt>
+        <dd class="col-sm-9">{{ certificate?.expand?.user?.name }}</dd>
+
+        <dt class="col-sm-3">Email:</dt>
+        <dd class="col-sm-9">{{ certificate?.expand?.user?.email }}</dd>
+
+        <dt class="col-sm-3">Issued Date:</dt>
+        <dd class="col-sm-9">{{ certificate?.created | date: 'medium' }}</dd>
+      </dl>
+
+      <div class="alert" role="alert" [ngClass]="{ 'alert-success': isValidCertificate(), 'alert-danger': !isValidCertificate() }">
+        {{ isValidCertificate() ? 'Valid Certificate' : 'Invalid Certificate' }}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container mt-4">
+  <h2>Certifications</h2>
+
+  <button class="btn btn-primary mb-3" (click)="addCertification()">Add Certification</button>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>User</th>
+        <th>Course</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let certification of certifications">
+        <td>{{ certification.id }}</td>
+        <td>{{ certification.expand.user.name }}</td>
+        <td>{{ certification.expand.course.name }}</td>
+        <td>
+          <button class="btn btn-sm btn-secondary mx-2">Send by Email</button>
+          <button class="btn btn-sm btn-primary"(click)="generateCertificate(certification)">Generate Certificate</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Move the certificate div outside of the ngFor loop -->
+  <div id="certificate">
+    <!-- The content of your certificate goes here -->
+  </div>
+</div>
